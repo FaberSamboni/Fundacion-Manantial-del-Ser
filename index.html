@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS BÁSICOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fundación Manantial del Ser - Transformando vidas desde 2005">
+    <meta name="keywords" content="fundación, ayuda social, educación, salud, comunidad Popayán">
+    <meta name="author" content="Fundación Manantial del Ser">
+    
+    <!-- OPEN GRAPH PARA REDES SOCIALES -->
+    <meta property="og:title" content="Fundación Manantial del Ser">
+    <meta property="og:description" content="Transformando vidas desde 2005 en Popayán, Cauca">
+    <meta property="og:image" content="img/hero/fundacion-social.jpg">
+    <meta property="og:url" content="https://tuusuario.github.io/fundacion-manantial">
+    <meta property="og:type" content="website">
+    
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fundación Manantial del Ser">
+    <meta name="twitter:description" content="Ayudando a comunidades en Popayán, Cauca">
+    
+    <!-- PWA CONFIG -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2C3E50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/icons/icon-192.png">
+    
+    <!-- FONTAWESOME (LOCAL PARA MEJOR PERFORMANCE) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <title>Fundación Manantial del Ser | Popayán, Cauca</title>
+</head>
+
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading">
+        <div class="spinner">
+            <i class="fas fa-hands-helping fa-spin"></i>
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/icons/logo.svg" alt="Logo Fundación Manantial del Ser" width="50" height="50">
+                <div class="logo-text">
+                    <h1>Fundación Manantial del Ser</h1>
+                    <p>Transformando vidas desde 2005</p>
+                </div>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#programas" class="nav-link">Programas</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#donar" class="btn-donar">Donar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <picture>
+                <source srcset="img/hero/fundacion-mobile.jpg" media="(max-width: 768px)">
+                <img src="img/hero/fundacion-desktop.jpg" 
+                     alt="Voluntarios de la fundación ayudando a la comunidad"
+                     loading="eager">
+            </picture>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h2>Construyendo Futuros en Popayán</h2>
+                <p>15 años transformando vidas a través de la educación, salud y desarrollo comunitario en el Cauca</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Únete como Voluntario</a>
+                    <a href="#donar" class="btn btn-secondary">Haz una Donación</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="18">0</div>
+                    <div class="stat-label">Años de Servicio</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="12500">0</div>
+                    <div class="stat-label">Personas Beneficiadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="850">0</div>
+                    <div class="stat-label">Voluntarios</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="45">0</div>
+                    <div class="stat-label">Proyectos Completados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Historia</h2>
+                <p>Conoce nuestra misión y visión</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Misión</h3>
+                    <p>Promover el desarrollo integral de comunidades vulnerables en Popayán y el Cauca, a través de programas de educación, salud y emprendimiento que generen cambios sostenibles.</p>
+                    
+                    <h3>Visión</h3>
+                    <p>Ser la fundación líder en transformación social en el suroccidente colombiano, reconocida por nuestro impacto positivo y compromiso con el desarrollo humano.</p>
+                    
+                    <div class="about-values">
+                        <div class="value">
+                            <i class="fas fa-heart"></i>
+                            <h4>Solidaridad</h4>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Compromiso</h4>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-users"></i>
+                            <h4>Comunidad</h4>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-seedling"></i>
+                            <h4>Sostenibilidad</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="img/equipo/equipo-fundacion.jpg" 
+                         alt="Equipo de la Fundación Manantial del Ser"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMAS -->
+    <section id="programas" class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Programas</h2>
+                <p>Iniciativas que cambian vidas</p>
+            </div>
+            
+            <div class="programs-grid">
+                <!-- Programa 1 -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Educación Inclusiva</h3>
+                        <p>Becas escolares, tutorías y talleres educativos para niños y jóvenes en situación vulnerable.</p>
+                        <ul>
+                            <li>✓ Becas completas</li>
+                            <li>✓ Refuerzo escolar</li>
+                            <li>✓ Talleres tecnológicos</li>
+                        </ul>
+                        <button class="btn-program" onclick="openModal('educacion')">Ver más</button>
+                    </div>
+                </div>
+                
+                <!-- Programa 2 -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Salud Comunitaria</h3>
+                        <p>Jornadas de salud, prevención y atención básica para familias necesitadas.</p>
+                        <ul>
+                            <li>✓ Jornadas médicas</li>
+                            <li>✓ Campañas de vacunación</li>
+                            <li>✓ Salud preventiva</li>
+                        </ul>
+                        <button class="btn-program" onclick="openModal('salud')">Ver más</button>
+                    </div>
+                </div>
+                
+                <!-- Programa 3 -->
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Vivienda Digna</h3>
+                        <p>Mejoramiento de viviendas y construcción de espacios seguros para familias.</p>
+                        <ul>
+                            <li>✓ Mejoramiento de viviendas</li>
+                            <li>✓ Construcción comunitaria</li>
+                            <li>✓ Materiales de construcción</li>
+                        </ul>
+                        <button class="btn-program" onclick="openModal('vivienda')">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO GRATUITO -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>¿Quieres ayudar o necesitas apoyo?</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Calle 20 # 33 11<br>Barrio Germania<br>Popayán, Cauca</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+57 (314) 6500759</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>fabergears@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes a Viernes<br>8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <!-- FORMULARIO GRATUITO CON FORMSPREE -->
+                    <form id="contactForm" action="https://formspree.io/f/mzznyabg" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" name="telefono" placeholder="Tu teléfono (opcional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select name="motivo" required>
+                                <option value="" disabled selected>¿Cómo podemos ayudarte?</option>
+                                <option value="voluntariado">Quiero ser voluntario</option>
+                                <option value="donacion">Quiero hacer una donación</option>
+                                <option value="informacion">Necesito información</option>
+                                <option value="apoyo">Necesito apoyo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                        </div>
+                        
+                        <!-- CAMPOS OCULTOS PARA FORMSPREE -->
+                        <input type="hidden" name="_subject" value="Nuevo contacto desde la web - Fundación">
+                        <input type="hidden" name="_next" value="gracias.html">
+                        <input type="hidden" name="_language" value="es">
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE DONACIONES -->
+    <section id="donar" class="donation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Apoya Nuestra Causa</h2>
+                <p>Cada aporte transforma vidas</p>
+            </div>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <h3>Transferencia Bancaria</h3>
+                    <div class="bank-info">
+                        <p><strong>Banco:</strong> BBVA</p>
+                        <p><strong>Cuenta:</strong> 1234-5678-9012-3456</p>
+                        <p><strong>CLABE:</strong> 012180001234567890</p>
+                        <p><strong>Titular:</strong> Fundación Manantial del Ser</p>
+                    </div>
+                </div>
+                
+                <div class="donation-card">
+                    <h3>Donación en Especie</h3>
+                    <ul>
+                        <li>Alimentos no perecederos</li>
+                        <li>Material escolar</li>
+                        <li>Medicamentos básicos</li>
+                        <li>Ropa en buen estado</li>
+                    </ul>
+                    <p>Coordinamos recolección en Popayán</p>
+                </div>
+                
+                <div class="donation-card">
+                    <h3>Voluntariado</h3>
+                    <p>Tu tiempo es invaluable</p>
+                    <a href="#contacto" class="btn btn-primary">Únete como Voluntario</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="img/icons/logo.svg" alt="Logo" width="40" height="40">
+                        <h3>Fundación Manantial del Ser</h3>
+                    </div>
+                    <p>Transformando vidas en Popayán desde 2005</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573146500759" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:fabergears@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#programas">Programas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#donar">Donar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="openModal('privacidad')">Política de Privacidad</a></li>
+                        <li><a href="#" onclick="openModal('terminos')">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir noticias</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Fundación Manantial del Ser. Todos los derechos reservados.</p>
+                <p>Popayán, Cauca - Colombia</p>
+                <p class="made-with">Hecho con ❤️ para la comunidad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALES -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+    
+    <!-- MODAL EDUCACIÓN -->
+    <div id="modalEducacion" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Educación Inclusiva</h3>
+            <div class="modal-body">
+                <img src="img/programas/educacion.jpg" alt="Programa de educación" loading="lazy">
+                <p>Programa integral que brinda acceso educativo a niños y jóvenes...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    
+    <!-- FORMSPREE FALLBACK -->
+    <script>
+        // Configuración para Formspree
+        window.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            if(form) {
+                // Tu ID de Formspree aquí
+                form.action = 'https://formspree.io/f/mzznyabg';
+            }
+        });
+    </script>
+    
+    <!-- GOOGLE ANALYTICS (OPCIONAL) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</body>
+</html>

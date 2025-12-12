@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias! - Fundación Manantial del Ser</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thank-you {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #2C3E50 0%, #1ABC9C 100%);
+            color: white;
+        }
+        
+        .thank-you-content {
+            max-width: 600px;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            animation: bounce 1s;
+        }
+        
+        .thank-you h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .thank-you p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you">
+        <div class="thank-you-content">
+            <div class="success-icon">🎉</div>
+            <h1>¡Mensaje Enviado con Éxito!</h1>
+            <p>Gracias por contactar con la <strong>Fundación Manantial del Ser</strong>. Hemos recibido tu mensaje y nos pondremos en contacto contigo en breve.</p>
+            <p>Mientras tanto, te invitamos a seguirnos en nuestras redes sociales para mantenerte informado sobre nuestros proyectos y actividades.</p>
+            
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Volver al Inicio
+                </a>
+                <a href="index.html#programas" class="btn btn-secondary">
+                    <i class="fas fa-hands-helping"></i> Ver Programas
+                </a>
+            </div>
+            
+            <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.8;">
+                <p>¿Necesitas ayuda inmediata? Llámanos: <strong>+57 (314) 6500759</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

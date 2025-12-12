@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fabersamboni.github.io/Fundacion-Manantial-del-Ser/sitemap.xml
+
+# Bloquear recursos no necesarios para SEO
+Disallow: /assets/
+Disallow: /img/originales/
